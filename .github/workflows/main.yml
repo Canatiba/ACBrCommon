@@ -30,13 +30,13 @@ jobs:
     - name: Build with Maven - Acbr Common
       run: mvn -B package --file "ACBr Common/pom.xml"
       
-    - name: Build with Maven - Boleto
-      run: mvn -B package --file "Boleto/pom.xml"
-
     - name: Publish to GitHub Packages Apache Maven - aCBr common
       run: mvn deploy -s  $GITHUB_WORKSPACE/settings.xml --file "ACBr Common/pom.xml"
       env:
         GITHUB_TOKEN: ${{ github.token }}
+      
+    - name: Build with Maven - Boleto
+      run: mvn -B package --file "Boleto/pom.xml"
         
     - name: Publish to GitHub Packages Apache Maven - Boleto
       run: mvn deploy -s  $GITHUB_WORKSPACE/settings.xml --file "Boleto/pom.xml"

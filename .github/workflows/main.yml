@@ -36,9 +36,9 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
       
     - name: Build with Maven - Boleto
-      run: mvn -B package --file "Boleto/pom.xml"
+      run: mvn -B package --file "Boleto/Imports/ACBrLibBoletoMT/pom.xml"
         
     - name: Publish to GitHub Packages Apache Maven - Boleto
-      run: mvn deploy -s  $GITHUB_WORKSPACE/settings.xml --file "Boleto/pom.xml"
+      run: mvn deploy -s  $GITHUB_WORKSPACE/settings.xml --file "Boleto/Imports/ACBrLibBoletoMT/pom.xml"
       env:
         GITHUB_TOKEN: ${{ github.token }}

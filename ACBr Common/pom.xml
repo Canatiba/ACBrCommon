@@ -7,6 +7,13 @@
     <artifactId>acbr-common-maven4</artifactId>
     <packaging>jar</packaging>
     <version>1.0</version>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/Canatiba/ACBrLib</url>
+        </repository>
+    </distributionManagement>
     <description>
         Essa biblioteca é destinada a funcionalidades do ACBr Common
     </description>

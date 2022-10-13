@@ -31,6 +31,6 @@ jobs:
       run: mvn -B package --file "ACBr Common/pom.xml"
 
     - name: Publish to GitHub Packages Apache Maven - aCBr common
-      run: mvn deploy -s  "ACBr Common/$GITHUB_WORKSPACE/settings.xml"
+      run: mvn deploy -s  "ACBr Common/settings.xml"
       env:
         GITHUB_TOKEN: ${{ github.token }}

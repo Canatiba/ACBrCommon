@@ -11,10 +11,19 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub Packages</name> 
+            <name>GitHub Packages</name>
             <url>https://maven.pkg.github.com/Canatiba/ACBrBoleto</url>
         </repository>
     </distributionManagement>
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub ACBrCommon Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/Canatiba/ACBrCommon</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+    </repositories>
     <description>
         Essa biblioteca é destinada a funcionalidades do ACBr Common
     </description>
